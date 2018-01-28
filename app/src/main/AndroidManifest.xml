@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.android.simpleplayer">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/OriginalTheme">
+        <activity android:name=".FileViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Player"
+            android:label="@string/list_name"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.example.android.simpleplayer.FileViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.simpleplayer.Player"/>
+        </activity>
+
+        <!--<activity android:name=".FileSelectActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name=".Player"-->
+            <!--android:label="@string/list_name"-->
+            <!--android:configChanges="orientation|screenSize"-->
+            <!--android:parentActivityName="com.example.android.simpleplayer.FileSelectActivity">-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value="com.example.android.simpleplayer.Player"/>-->
+
+        <!--</activity>-->
+
+
+    </application>
+
+</manifest>

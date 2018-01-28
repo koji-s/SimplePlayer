@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DUO3.0 PLAYER</string>
+    <string name="list_name">MP3-List</string>
+    <string name="prevMark">＜＜</string>
+    <string name="nextMark">＞＞</string>
+    <string name="prev4secMark">＜＜4Sec</string>
+    <string name="next4secMark">4Sec＞＞</string>
+    <string name="playOnOffMark">TAP ME</string>
+</resources>
